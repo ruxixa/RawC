@@ -12,13 +12,12 @@ RawC is an educational remake of C standard libraries
 - ctype.h
 
 ### In progress:
-- .
+- string.h
 
 ### Planned:
 
 - math.h
 - stdlib.h
-- string.h
 
 # Usage
 
