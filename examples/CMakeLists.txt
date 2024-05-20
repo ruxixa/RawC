@@ -6,6 +6,8 @@
 #
 # Date: 20.05.2024
 
-# Add executables
-add_executable(stdioh.c)    # stdio.h remake example
-add_executable(ctypeh.c)    # ctype.h remake example
+project(RawC)
+
+# Add the source files
+add_executable(stdioh stdioh.c)    # stdio.h remake example
+add_executable(ctypeh ctypeh.c)    # ctype.h remake example

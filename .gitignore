@@ -51,6 +51,12 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# build directory
+build/
+out/ 
+output/
+bin/
+
 # Code editors
 .vscode/
 *.swp

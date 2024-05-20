@@ -21,6 +21,7 @@ project(RawC)
 # own exit() implementation
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIE -w")
 
-# Add the source files
-target_link_libraries(example RawC)
-target_include_directories(RawC PUBLIC src/)
+include_directories(src/)
+
+# Add the examples
+add_subdirectory(examples)

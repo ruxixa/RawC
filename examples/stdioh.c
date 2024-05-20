@@ -21,9 +21,12 @@ int main() {
     _scanf("Enter a number: %d", &num);
     _printf("You entered: %d\n", num);
     
-    _FILE* file = _fopen("test", "w+");
+    _FILE* file = _fopen("test.txt", "w+");
     _fwrite("Hello, World!", 1, 13, file);
-    _fclose()
+
+    _printf("Wrote to file test.txt: %d\n");
+
+    _fclose(file);
 
     _exit(0);
 }
