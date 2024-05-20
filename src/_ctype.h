@@ -6,8 +6,8 @@
  * Date: 20.05.2024
 */
 
-#ifndef _CTYPE_H
-#define _CTYPE_H
+#ifndef __CTYPE_H__
+#define __CTYPE_H__
 
 /**
  * Library functions:

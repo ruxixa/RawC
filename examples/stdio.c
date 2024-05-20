@@ -1,5 +1,5 @@
 /**
- * stdio.h - an example usage of the 
+ * stdioh.c - an example usage of the 
  * standard input/output library remake.
  * 
  * This file uses only few functions from the

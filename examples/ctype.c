@@ -1,5 +1,5 @@
 /**
- * ctype.h - an example usage of the 
+ * ctypeh.c - an example usage of the 
  * standard mapping and testing library remake.
  *
  * Author: ruxixa

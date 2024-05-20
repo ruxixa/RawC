@@ -73,3 +73,31 @@ char* _strcat(char* dest, const char* src) {
     return dest;
 }
 
+/**
+ * Compare two strings.
+ * 
+ * @param str1 - the first string.
+ * @param str2 - the second string.
+ * @return 0 if the strings are equal, 
+ *         a negative value if str1 is less than str2,
+ *         a positive value if str1 is greater than str2.
+*/
+int _strcmp(const char* str1, const char* str2) {
+    _size_t i = 0;
+
+    while (str1[i] != '\0' && str2[i] != '\0') {
+        if (str1[i] != str2[i]) {
+            return str1[i] - str2[i];
+        }
+        i++;
+    }
+
+    return str1[i] - str2[i];
+}
+
+
+/**
+ * 
+ * 
+ * 
+*/

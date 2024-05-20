@@ -10,6 +10,7 @@ RawC is an educational remake of C standard libraries
 
 - stdio.h 
 - ctype.h
+- stdbool.h
 
 ### In progress:
 - string.h
