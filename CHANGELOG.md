@@ -1,13 +1,12 @@
 [Go back to README](README.md)
 
+
 # 1.0.0 - 2024/05/19
 
 ## Added:
 
 - All project files
 - First library remake (stdio.h)
-
-# Latest Version: 1.1.0
 
 # 1.1.0 - 2024/05/20
 
@@ -20,3 +19,11 @@
 
 - stdio.h example
 - modified CMakeLists.txt to make them more readable
+
+# 1.1.5 - 2024/05/20
+
+## Added:
+- stdbool.h library
+- stdbool.h library
+
+# Latest Version: 1.1.5
