@@ -30,6 +30,8 @@
     #include <x86_64/syscalls.h>
 #elif defined(__i386__) || defined(__i686__)
     #include <x86/syscalls.h>
+#elif defined(__arm__)
+    #include <arm/syscalls.h>
 #else
     #error "Architecture not supported"
 #endif
