@@ -1,17 +1,26 @@
+# CMakeLists.txt
+# 
+# This file is part of the RawC project.
+#
+# Author: ruxixa
+#
+# Date: 20.05.2024
+
 cmake_minimum_required(VERSION 3.0)
-project(NoLibC)
 
-# Set compiler options
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -fPIE -w")
+project(RawC)
 
-# Define the 'NoLibC' library target
-add_library(NoLibC example.c)
+# Flags used:
+# -fPIE: Generate position-independent code
+# -w: Disable all warnings
+#
+# The reason I had to disable warnings
+# is because the compiler would complain
+# about things such as no return main function,
+# what is intender because we are using 
+# own exit() implementation
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIE -w")
 
-# Define the 'example' target and associate it with the 'example.c' source file
-add_executable(example example.c)
-
-# Indicate that 'example' depends on 'NoLibC'
-target_link_libraries(example NoLibC)
-
-# Add directory containing header files for 'NoLibC' library
-target_include_directories(NoLibC PUBLIC src/)
+# Add the source files
+target_link_libraries(example RawC)
+target_include_directories(RawC PUBLIC src/)

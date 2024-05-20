@@ -7,9 +7,15 @@ RawC is an educational remake of C standard libraries
 # Libraries remade
 
 ### Remade Libraries:
+
 - stdio.h 
+- ctype.h
+
+### In progress:
+- .
 
 ### Planned:
+
 - math.h
 - stdlib.h
 - string.h

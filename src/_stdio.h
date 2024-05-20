@@ -1,13 +1,6 @@
 /**
  * _stdio.h - Standard input/output library remake.
  * 
- * This file is a remake of the standard input/output library
- * using the syscalls depending on the architecture. The library
- * is a part of the RawC project.
- * 
- * Functions:
- * - _int_len - Get a lenght of an given inteeger.
- * 
  * Author: ruxixa
  * 
  * Date: 17.05.2024
@@ -637,4 +630,4 @@ void _fread(char *str, _size_t size, _size_t nmemb, _FILE *stream) {
     sys_read(stream->fd, str, size * nmemb);
 }
 
-#endif // include guard
+#endif // __STDIO_H__
