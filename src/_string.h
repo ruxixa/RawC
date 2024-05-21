@@ -13,7 +13,7 @@
 typedef unsigned long long int _size_t;
 
 /* NULL - a macro representing a null pointer. */
-#define _NULL ((void*)0)
+#define _NULL ((void *)0)
 
 /**
  * Get the length of given string.
@@ -95,9 +95,52 @@ int _strcmp(const char* str1, const char* str2) {
     return str1[i] - str2[i];
 }
 
+/**
+ * Find the first occurrence of a character in the string.
+ * 
+ * @param str - the string to be searched.
+ * @param ch - the character to be found.
+ * @return a pointer to the first occurrence of the 
+ *         character in the string.
+ *         NULL if the character is not found.
+*/
+char* _strchr(const char* str, int ch) {
+    size_t i = 0; // Use size_t for indexing
+
+    while (str[i] != '\0') {
+        if (str[i] == (char)ch) {
+            return (char*)&str[i];
+        }
+        i++;
+    }
+
+    return (char*)_NULL; // Cast _NULL to char* to match return type
+}
 
 /**
+ * Find the last occurrence of a character in the string.
  * 
- * 
- * 
+ * @param str - the string to be searched.
+ * @param ch - the character to be found.
+ * @return a pointer to the last occurrence of the 
+ *         character in the string.
+ *         NULL if the character is not found.
 */
+char * _strrchr(const char* str, int ch) {
+    size_t i = 0;
+    size_t last = -1; // Initialize last to -1
+
+    while (str[i] != '\0') {
+        if (str[i] == (char)ch) {
+            last = i;
+        }
+        i++;
+    }
+
+    // if the character is not found
+    if (last == -1) {
+        return (char*)_NULL;
+    }
+
+    return (char*)&str[last];
+}
