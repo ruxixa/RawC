@@ -32,6 +32,8 @@ git clone https://github.com/ruxixa/RawC.git
 
 ### Example usage
 
+An example usage of stdio.h remake
+
 ```C
 #include <include/rawc/_stdio.h>
 
