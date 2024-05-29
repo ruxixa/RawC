@@ -23,7 +23,12 @@
 # 1.1.5 - 2024/05/20
 
 ## Added:
-- stdbool.h library
+
 - stdbool.h library
 
-# Latest Version: 1.1.5
+# 1.2.0 - 2024/05/29
+
+## Changed:
+- finished string.h
+
+# Latest Version: 1.2.0
