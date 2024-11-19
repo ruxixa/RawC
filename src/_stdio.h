@@ -6,12 +6,9 @@
  * Date: 17.05.2024
 */
 
-// include guard 
 #ifndef __STDIO_H__
 #define __STDIO_H__
 
-// unfortunately, I had no clue how to implement
-// the stdarg.h library, so I had to use the orginal one
 #include <stdarg.h>
 
 /**
